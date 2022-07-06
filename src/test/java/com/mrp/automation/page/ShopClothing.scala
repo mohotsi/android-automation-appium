@@ -1,6 +1,6 @@
 package com.mrp.automation.page
 
-import com.mrp.automation.webElement.WebElementImplicit.Cuddle
+import com.mrp.automation.webElement.AndroidElementImplicit.Cuddle
 import io.appium.java_client.android.{AndroidDriver, AndroidElement}
 import scala.collection.convert.ImplicitConversions.`collection AsScalaIterable`
 
