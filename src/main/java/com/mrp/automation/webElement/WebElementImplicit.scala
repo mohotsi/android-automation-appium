@@ -10,7 +10,6 @@ import scala.util.Random
 object WebElementImplicit {
 
   implicit class Cuddle(androidElement: =>AndroidElement)(implicit driver:AndroidDriver[AndroidElement]){
-
     def scrollTo()={
       //scroll until the element is visible on the screen
       driver.executeScript("arguments[0].scrollIntoView(true);", androidElement);
