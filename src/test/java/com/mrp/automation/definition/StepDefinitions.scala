@@ -1,13 +1,14 @@
+package com.mrp.automation.definition
+
 import com.mrp.automation.AndroidAppiumTestExecutor
 import com.mrp.automation.page.component.{ProductComponent, ResultsGridComponent, SortAndFilterComponent}
 import com.mrp.automation.page.data.model.ProductData
-import com.mrp.automation.page.{DressesAndTunics, HomePage, LadiesPage, ShopClothing, ShopPage}
+import com.mrp.automation.page._
 import io.appium.java_client.android.{AndroidDriver, AndroidElement}
-import io.cucumber.scala.{EN, PendingException, ScalaDsl}
+import io.cucumber.scala.{EN, ScalaDsl}
 import org.testng.Assert.assertEquals
 
 import scala.collection.convert.ImplicitConversions.`collection AsScalaIterable`
-import scala.util.Try
 
 class StepDefinitions extends ScalaDsl with EN {
   implicit val  driver: AndroidDriver[AndroidElement] = AndroidAppiumTestExecutor().getDriver()

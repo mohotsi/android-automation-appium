@@ -1,5 +1,5 @@
 Feature: Order
-  Scenario: test 1
+  Scenario: Sort by Price ascending order
     When User Navigate to Shop
     And User Navigate to Ladies
     And User Navigate to Shop clothing
