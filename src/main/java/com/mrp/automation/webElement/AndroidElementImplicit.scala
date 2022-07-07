@@ -24,20 +24,9 @@ androidElement
       androidElement
     }
     def waitUntilElementIsInDom(timeOutInSeconds: Int = 10):AndroidElement ={
-        try{
-          androidElement
-        }
-      catch {
-        case e:StaleElementReferenceException=>
-          if(timeOutInSeconds>0){
-            Thread.sleep(1000)
-            waitUntilElementIsInDom(timeOutInSeconds-1)
-          }
-          else
-            androidElement
 
-      }
-
+      webDriverWait().until(ExpectedConditions.refreshed(ExpectedConditions.stalenessOf(androidElement)));
+      androidElement
 
     }
     def  webDriverWait(): WebDriverWait  ={

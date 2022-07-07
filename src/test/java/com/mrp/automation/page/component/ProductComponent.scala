@@ -6,7 +6,7 @@ import io.appium.java_client.android.{AndroidDriver, AndroidElement}
 
 import java.awt.image.BufferedImage
 
-  class ProductComponent(androidElement:AndroidElement)(implicit driver:AndroidDriver[AndroidElement]) {
+  class ProductComponent(androidElement: =>AndroidElement)(implicit driver:AndroidDriver[AndroidElement]) {
 
 
   def getProductTitle() = {

@@ -31,8 +31,8 @@ val sortAndFilterComponent= new SortAndFilterComponent()
   }
   Then("""Select product item by name {string}""") { (title: String) =>
     // Write code here that turns the phrase above into concrete actions
-   itemSelected++List( DressesAndTunics().getProductByTitleData(title))
-    DressesAndTunics().selectProductByTitle(title)
+   itemSelected++List( DressesAndTunics().selectProductByTitle(title))
+
   }
   Then("""Sort by {string}""") { (sortBy: String) =>
   sortAndFilterComponent.sortProductsBy(sortBy)
